@@ -599,7 +599,7 @@ textarea {
       .menu-active .leftlinks ul {
         display: flex;
         flex-direction: column;
-        background-color: pink;
+        background-color: #eeeeee;
         position: absolute;
         top: 49px;
         left: 0;
