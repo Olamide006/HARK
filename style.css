@@ -384,7 +384,7 @@ nav {
   margin-right: 10px;
 }
 .feature-item p {
-  margin: 0;
+  margin-left: 10px;
 }
 .illustration-section {
   background-color: #00a775;
@@ -402,7 +402,8 @@ nav {
 .rating,
 .award {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  /* align-items: center; */
   margin-bottom: 20px;
 }
 .rating img,
@@ -412,11 +413,15 @@ nav {
   margin-right: 10px;
 }
 .illustration {
-  text-align: right;
+  text-align: left;
+position: relative;
+
 }
 .illustration img {
-  max-width: 150px;
+  max-width: 300px;
   height: auto;
+  position: relative;
+  left: -150px;
 }
 /* counter */
 .main {
@@ -497,14 +502,14 @@ nav {
   background-color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  /* margin: 70px; */
+  justify-content: start;
   padding: 50px 10px;
 }
 .contact1 {
   background-color: #0046f6;
   border-radius: 10px;
   padding: 20px;
+  width: 650px;
 }
 .contact1 h1 {
   font-size: 40px;
@@ -536,13 +541,7 @@ input {
   border-radius: 5px;
   width: 48%;
 }
-.contact2 {
-  display: flex;
-  flex-direction: column;
-  margin: 100px;
-  /* padding: 100px; */
-  border: 2px solid pink;
-}
+
 select {
   padding: 15px 10px;
   background-color: black;
@@ -570,7 +569,32 @@ textarea {
   border: 1px solid #eee;
   background-color: #0046f6;
 }
+.contact-card{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ margin-top: 30px;
 
+}
+.contact2{
+  margin-top:200px  ;
+  /* padding-top: 100px; */
+}
+.left-btn button{
+  padding: 15px;
+  border-radius: 50%;
+background-color: #0046ff;
+border: none;
+margin-left: 20px;
+/* margin-top: 30px; */
+}
+.details2{
+  margin-left: 15px;
+}
+.footer-container{
+color: #0046f6;
+text-align: center;
+}
 @media only screen and (max-width: 768px) {
  
     /* Mobile View */
@@ -750,15 +774,16 @@ textarea {
   .service-card p {
     margin-left: 9px;
   }
-
   /* contact */
-
+  
   .contact {
     background-color: #eeee;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
-    /* margin: 70px; */
-    padding: 20px 10px;
+    padding: 0px;
+  }
+  .contact1{
+    width: 100%;
   }
   .contact1 h1 {
     font-size: 28px;
@@ -782,14 +807,6 @@ textarea {
     border-radius: 5px;
     width: 100%;
   }
-
-  .contact2 {
-    display: flex;
-    flex-direction: column;
-    margin: 100px;
-    /* padding: 100px; */
-    border: 2px solid pink;
-  }
   select {
     padding: 15px 10px;
     background-color: black;
@@ -812,7 +829,22 @@ textarea {
     height: 150px;
     border: 1px solid rgb(63, 63, 63);
   }
+  .contact-card{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /* padding:30px; */
+   
+   
+  }
+  .contact2{
+ padding-bottom: 40px;
+ margin-top: 0px;
+  }
 }
+
+
+
 /* Responsive Code */
 @media screen and (max-width: 768px) {
   .slider-wrapper {
@@ -842,6 +874,7 @@ textarea {
     flex: 1;
     margin-top: 0;
   }
+
 }
 
 /* Mobile View */
@@ -849,14 +882,19 @@ textarea {
   .feature-container {
     flex-direction: column;
   }
-  .illustration-section {
-    text-align: center;
+  .illustration-section p{
+    /* text-align: center; */
   }
   .illustration-section .illustration {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 20px;
   }
   .illustration img {
-    max-width: 120px;
+    display: none;
   }
+.rating i,
+.award i{
+  margin-right: 20px;
 }
+}
+
