@@ -18,6 +18,8 @@
   src: url(C:\Users\user\Desktop\REBRAND\Fonts\Fontspring-DEMO-ragazzi-condensedsemibold.otf);
 }
 body {
+  background-color: #fffcf7;
+  color: #0f1020;
   font-family: poppins;
 }
 li {
@@ -32,35 +34,28 @@ header {
   height: 60px;
   padding-top: 10px;
   border-bottom: 1px solid #e2e8f0;
-  background: linear-gradient(to bottom, #3f3f3f, #5a5a5a);
+  background: #fffcf7;
   font-family: poppins;
-  /* position: relative; */
-  /* z-index: 10; */
 }
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 /* Left Section (Hamburger + Logo) */
 .left {
   display: flex;
   align-items: center;
 }
-
 .logo p {
   font-size: 24px;
   font-weight: bold;
   margin-left: 10px;
 }
-
 .leftlinks ul {
   display: flex;
   flex-direction: row;
 }
-
 .leftlinks ul li {
   list-style-type: none;
 }
@@ -70,38 +65,28 @@ nav {
   padding: 10px;
   color: black;
 }
-
 .leftlinks ul li a:hover {
-  color: #555;
-  text-decoration: underline;
+  color: #a1b5d8;
 }
-
 /* Right Section */
 .right {
   display: flex;
   justify-content: space-evenly;
 }
-
 .right button {
   margin: 0 15px;
   padding: 5px 15px;
   border-radius: 5px;
   border: none;
   background-color: #0046f6;
-  color: #fff;
+  color: #fffcf7;
 }
-
 .right button:hover {
-  background-color: lightgray;
+  background-color: #a1b5d8;
 }
-
 /* Hamburger Menu (Hidden by default) */
 .hamburger-menu {
   display: none;
-}
-
-.nav li a:hover {
-  color: #ffd700;
 }
 .hero img {
   width: 600px;
@@ -114,14 +99,13 @@ nav {
 .hero1 {
   align-items: center;
   text-align: left;
-  /* margin: 0 auto; */
   margin-top: 150px;
   margin-left: 50px;
 }
 .hero button {
   background-color: #0046f6;
   padding: 20px;
-  color: #eeeeee;
+  color: #fffcf7;
   font-size: 25px;
   border: none;
   border-radius: 10px;
@@ -141,20 +125,40 @@ nav {
   padding: 20px;
 }
 .skills {
-  /* margin: 40px 0px; */
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: space-evenly;
-  background-color: #fff;
+  background-color: #fffcf7;
 }
-
+/* counter */
+.main {
+  padding: 10px 0;
+}
+.count-container {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+}
+.count-heading {
+  flex: 1;
+  font-size: 19px;
+  text-align: center;
+  padding: 20px;
+}
+.count {
+  font-size: 24px;
+  color: #0f1020;
+}
+.plus-sign {
+  font-size: 30px;
+  color: #0f1020;
+}
+/* slider */
 .slide-container {
-  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f5f5f5;
+  background: #fffcf7;
 }
 .container-slide {
   width: 1120px;
@@ -166,8 +170,8 @@ nav {
   overflow: hidden;
 }
 .card {
-  background: #fff;
   border-radius: 25px;
+  margin-bottom: 20px;
   box-shadow: 0 0 20px #00000030;
 }
 .content-img,
@@ -188,7 +192,7 @@ nav {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #00039d;
+  background: #0046f6;
   border-radius: 25px 25px 25px 0;
 }
 .overlay::before {
@@ -196,7 +200,7 @@ nav {
   position: absolute;
   height: 40px;
   width: 40px;
-  background: #00039d;
+  background: #0046f6;
   left: 0;
   bottom: -40px;
 }
@@ -223,19 +227,17 @@ nav {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #00039d;
+  border: 4px solid #0046f6;
 }
 .content-box .username {
   font-size: 26px;
   font-weight: 600;
-  color: #09003a;
   padding-bottom: 6px;
   z-index: 1;
 }
 .content-box .user-profession {
   font-size: 16px;
   font-weight: 500;
-  color: #09003a;
 }
 .social-icon {
   padding: 30px 0;
@@ -257,7 +259,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #00039d;
+  background: #0046f6;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -270,7 +272,7 @@ nav {
   width: 0;
   top: 0;
   left: 0;
-  background: #ff008c;
+  background: #a1b5d8;
   transition: 0.5s;
   z-index: -1;
 }
@@ -283,8 +285,8 @@ nav {
   font-size: 16px;
   font-weight: 500;
   border: none;
-  background: #00039d;
-  color: #fff;
+  background: #0046f6;
+  color: #fffcf7;
   border-radius: 6px;
   z-index: 1;
   position: relative;
@@ -297,7 +299,7 @@ nav {
   width: 0;
   top: 0;
   left: 0;
-  background: #ff008c;
+  background: #a1b5d8;
   transition: 0.5s;
   z-index: -1;
 }
@@ -305,7 +307,7 @@ nav {
   width: 100%;
 }
 .slider-wrapper .swiper-pagination-bullet {
-  background: #00039d;
+  background: #0046f6;
   height: 13px;
   width: 13px;
   opacity: 0.5;
@@ -314,20 +316,21 @@ nav {
   opacity: 1;
 }
 .slider-wrapper .swiper-slide-button {
-  color: #00039d;
+  color: #0046f6;
   margin-top: -40px;
   transition: 0.5s;
 }
 .slider-wrapper .swiper-slide-button:hover {
-  color: #ff008c;
+  color: #a1b5d8;
 }
-
+/* talent */
 .talent-wrapper {
-  background: rgb(236, 203, 203);
+  background: #0046f6;
+  color: #fffcf7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 10px;
+  margin: 10px 5px;
   border-radius: 10px;
   padding: 10px;
 }
@@ -341,18 +344,16 @@ nav {
 .talentboxes {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 10px;
 }
 .talentbox {
-  border: 1px solid black;
-  width: 390px;
+  border: 1px solid #fffcf7;
+  width: 310px;
   border-radius: 20px;
   padding: 15px;
 }
 /* feature */
-
 .feature-container {
   display: flex;
   flex-direction: column;
@@ -387,7 +388,7 @@ nav {
   margin-left: 10px;
 }
 .illustration-section {
-  background-color: #00a775;
+  background-color: #0046f6;
   color: white;
   padding: 40px;
   text-align: left;
@@ -403,7 +404,6 @@ nav {
 .award {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   margin-bottom: 20px;
 }
 .rating img,
@@ -414,8 +414,7 @@ nav {
 }
 .illustration {
   text-align: left;
-position: relative;
-
+  position: relative;
 }
 .illustration img {
   max-width: 300px;
@@ -423,56 +422,24 @@ position: relative;
   position: relative;
   left: -150px;
 }
-/* counter */
-.main {
-  padding: 10px 0;
-}
-.count-container {
-  padding: 5px;
-  margin: 5px;
-  display: flex;
-}
-.count-heading {
-  flex: 1;
-  /* margin: 10px; */
-  font-size: 19px;
-  text-align: center;
-  padding: 20px;
-  /* margin: 100px; */
-}
-.count {
-  font-size: 24px;
-}
-.plus-sign {
-  font-size: 30px;
-}
-
 /* service */
 .service-container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(253, 253, 253);
+  background-color: #fffcf7;
 }
 .service-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid rgb(62, 85, 239);
+  border: 1px solid #0046f6;
   border-right: none;
   border-left: none;
-  height: 70px;
-  align-items: center;
+  padding: 40px 0px;
+  align-items: left;
 }
 .service-card:hover {
-  background-image: linear-gradient(
-    45deg,
-    rgb(17, 75, 95),
-    rgb(66, 66, 123),
-    rgb(149, 141, 198),
-    rgb(5, 5, 35)
-  );
-  /* background-clip: text;
--webkit-text-fill-color: transparent; */
+  background-color: #a1b5d8;
 }
 .service-card h3 {
   display: flex;
@@ -486,40 +453,25 @@ position: relative;
   margin: 10px;
   font-size: 50px;
   text-align: center;
-  background-image: linear-gradient(
-    45deg,
-    rgb(17, 75, 95),
-    rgb(66, 66, 123),
-    rgb(149, 141, 198),
-    rgb(5, 5, 35)
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 /* contact */
-
 .contact {
-  background-color: #fff;
+  background-color: #fffcf7;
   display: flex;
   flex-direction: row;
   justify-content: start;
   padding: 50px 10px;
 }
 .contact1 {
-  background-color: #0046f6;
+  background-color: #0f1020;
+  color: #fff4cf;
   border-radius: 10px;
   padding: 20px;
   width: 650px;
 }
 .contact1 h1 {
   font-size: 40px;
-  background-image: linear-gradient(
-    45deg,
-    rgb(4, 25, 32),
-    rgb(21, 21, 132),
-    rgb(131, 115, 234),
-    rgb(5, 5, 35)
-  );
+  background-image: linear-gradient(45deg, #0046f6, #a1b5d8, #fff4cf);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -537,11 +489,10 @@ input {
   margin: 10px 0px 0px 0px;
   background-color: black;
   color: white;
-  border: 1px solid rgb(63, 63, 63);
+  border: 1px solid #fffcf7;
   border-radius: 5px;
   width: 48%;
 }
-
 select {
   padding: 15px 10px;
   background-color: black;
@@ -549,7 +500,11 @@ select {
   margin: 10px 0px;
   border: none;
   width: 100%;
-  border: 1px solid rgb(63, 63, 63);
+  border: 1px solid #fffcf7;
+}
+option {
+  background-color: #fffcf7;
+  color: #101010;
 }
 textarea {
   background-color: #101010;
@@ -557,128 +512,112 @@ textarea {
   border: none;
   border-radius: 15px;
   width: 100%;
-  color: white;
+  color: #fff4cf;
+  border: 1px solid #fffcf7;
 }
 .send-btn {
-  color: white;
+  color: #fff4cf;
   padding: 15px 20px;
   border-radius: 19px;
   width: 150px;
   margin-top: 10px;
   outline: none;
-  border: 1px solid #eee;
+  border: 1px solid #fffcf7;
   background-color: #0046f6;
 }
-.contact-card{
- display: flex;
- flex-direction: row;
- align-items: center;
- margin-top: 30px;
-
+.contact-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
 }
-.contact2{
-  margin-top:200px  ;
-  /* padding-top: 100px; */
+.contact2 {
+  margin-top: 200px;
 }
-.left-btn button{
+.left-btn button {
   padding: 15px;
   border-radius: 50%;
-background-color: #0046ff;
-border: none;
-margin-left: 20px;
-/* margin-top: 30px; */
+  background-color: #0046ff;
+  border: none;
+  margin-left: 20px;
 }
-.details2{
+.details2 {
   margin-left: 15px;
 }
-.footer-container{
-color: #0046f6;
-text-align: center;
+.footer-container {
+  color: #0046f6;
+  text-align: center;
 }
 @media only screen and (max-width: 768px) {
- 
-    /* Mobile View */
-    header {
-      height: 50px;
-      padding-top: 10px;
-      
-    }
-      /* Display Hamburger Menu */
-      .hamburger-menu {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        margin-left: 10px;
-        justify-content: space-between;
-        height: 20px;
-        width: 25px;
-      }
-
-      /* Hamburger Menu Bars */
-      .hamburger-menu span {
-        background-color: black;
-        height: 3px;
-        width: 100%;
-        transition: all 0.3s ease;
-        margin-top: 4px;
-      }
-
-      /* Hide Navigation Links (Left and Right) */
-      .leftlinks ul{
-        display: none;
-      }
-
-      /* Display Navigation when the menu is active */
-      .menu-active .leftlinks ul {
-        display: flex;
-        flex-direction: column;
-        background-color: #eeeeee;
-        position: absolute;
-        top: 49px;
-        left: 0;
-        width: 100%;
-        padding: 20px;
-        height: 100%;
-      }
-
-      /* Style the links in the mobile view */
-      .leftlinks ul li {
-        padding: 10px 0;
-        text-align: left;
-        width: 100%;
-      }
-
-      /* Display the search button on the right */
-      .menu-active .right {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 15px;
-      }
-
-      /* Hire Me Button (below links when active) */
-      .menu-active .right button:nth-child(2) {
-        display: block;
-        /* margin-top: 20px; */
-        /* width: 100%; */
-      }
-
-      /* Extra space between header and links when menu is opened */
-      .menu-active .leftlinks {
-        margin-top: 20px;
-      }
-
-      /* Hamburger to Multiplication Sign (when active) */
-      .menu-active .hamburger-menu span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-      }
-
-      .menu-active .hamburger-menu span:nth-child(2) {
-        opacity: 0;
-      }
-
-      .menu-active .hamburger-menu span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-      }
+  /* Mobile View */
+  header {
+    height: 50px;
+    padding-top: 10px;
+  }
+  /* Display Hamburger Menu */
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 10px;
+    justify-content: space-between;
+    height: 20px;
+    width: 25px;
+  }
+  /* Hamburger Menu Bars */
+  .hamburger-menu span {
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-top: 4px;
+  }
+  /* Hide Navigation Links (Left and Right) */
+  .leftlinks ul {
+    display: none;
+  }
+  /* Display Navigation when the menu is active */
+  .menu-active .leftlinks ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 49px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+  }
+  /* Style the links in the mobile view */
+  .leftlinks ul li {
+    padding: 10px 0;
+    text-align: left;
+    width: 100%;
+  }
+  /* Display the search button on the right */
+  .menu-active .right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+  /* Hire Me Button (below links when active) */
+  .menu-active .right button:nth-child(2) {
+    display: block;
+  }
+  /* Extra space between header and links when menu is opened */
+  .menu-active .leftlinks {
+    margin-top: 20px;
+  }
+  /* Hamburger to Multiplication Sign (when active) */
+  .menu-active .hamburger-menu span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-active .hamburger-menu span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-active .hamburger-menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
   .hero img {
     width: 250px;
   }
@@ -691,14 +630,10 @@ text-align: center;
     margin-left: 20px;
   }
   .hero1 {
-    align-items: center;
-    text-align: left;
     margin: 0;
   }
   .hero button {
-    background-color: #0046f6;
     padding: 10px 20px;
-    color: white;
     font-size: 15px;
     border-radius: 7px;
   }
@@ -709,44 +644,43 @@ text-align: center;
   .skills {
     margin: 20px 0px;
   }
+  /* counter */
   .main {
     padding: 0 0;
   }
   .count-container {
     padding: 0px;
     margin: 0px;
-    display: flex;
   }
   .count-heading {
     font-size: 10px;
-    text-align: center;
-    margin: 0px;
   }
   .count {
     font-size: 30px;
-    color: #0046f6;
   }
-  .plus-sign {
-    color: #0046f6;
-    font-size: 30px;
+  /* slider */
+  .slider-wrapper {
+    margin: 0 20px 20px;
+    padding: 20px 30px;
   }
+  /* talent */
   .talentbox {
+    border: 1px solid #fffcf7;
+    width: 270px;
+    border-radius: 20px;
+    padding: 15px;
     margin-bottom: 20px;
   }
-
-  .service-container {
-    background-color: white;
-  }
-  .service-card {
+  .talentboxes {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    border: 1px solid #0046ff;
-    height: 150px;
-    align-items: left;
+    justify-content: space-between;
+    margin-top: 10px;
   }
-  .service-card:hover {
-    background-image: linear-gradient(45deg, #fff, #0046ff);
+  /* .service-card */
+  .service-card {
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   .service-card h3 {
     margin-right: 70px;
@@ -756,110 +690,55 @@ text-align: center;
     margin-right: 10px;
     margin-left: 0px;
   }
-
   .service-h1 {
     margin: 15px;
     font-size: 40px;
     text-align: center;
-    background-image: linear-gradient(
-      45deg,
-      rgb(17, 75, 95),
-      rgb(66, 66, 123),
-      rgb(149, 141, 198),
-      rgb(5, 5, 35)
-    );
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .service-card p {
     margin-left: 9px;
   }
   /* contact */
-  
   .contact {
-    background-color: #eeee;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     padding: 0px;
   }
-  .contact1{
+  .contact1 {
     width: 100%;
   }
   .contact1 h1 {
     font-size: 28px;
   }
-
   .contact1 p {
     font-size: 15px;
     margin-bottom: 10px;
   }
-
   .details1 {
     flex-direction: column;
     justify-content: space-evenly;
   }
   input {
-    padding: 10px;
-    margin: 10px 0px 0px 0px;
-    background-color: black;
-    color: white;
-    border: 1px solid #eeeeee;
-    border-radius: 5px;
     width: 100%;
   }
   select {
-    padding: 15px 10px;
-    background-color: black;
-    color: white;
-    margin: 10px 0px;
     border-radius: 5px;
-    width: 100%;
-    border: 1px solid rgb(63, 63, 63);
-  }
-  option {
-    background-color: white;
-    color: black;
   }
   textarea {
-    background-color: #101010;
-    padding: 10px;
     border-radius: 7px;
-    width: 100%;
-    color: white;
     height: 150px;
-    border: 1px solid rgb(63, 63, 63);
   }
-  .contact-card{
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    /* padding:30px; */
-   
-   
-  }
-  .contact2{
- padding-bottom: 40px;
- margin-top: 0px;
+  .contact2 {
+    padding-bottom: 40px;
+    margin-top: 0px;
   }
 }
-
-
-
-/* Responsive Code */
-@media screen and (max-width: 768px) {
-  .slider-wrapper {
-    margin: 0 20px 20px;
-    padding: 20px 30px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .slider-wrapper {
     margin: 0 20px 20px;
     padding: 20px 30px;
   }
 }
-
 /* Desktop View */
 @media (min-width: 768px) {
   .feature-container {
@@ -874,16 +753,11 @@ text-align: center;
     flex: 1;
     margin-top: 0;
   }
-
 }
-
 /* Mobile View */
 @media (max-width: 767px) {
   .feature-container {
     flex-direction: column;
-  }
-  .illustration-section p{
-    /* text-align: center; */
   }
   .illustration-section .illustration {
     /* text-align: center; */
@@ -892,9 +766,8 @@ text-align: center;
   .illustration img {
     display: none;
   }
-.rating i,
-.award i{
-  margin-right: 20px;
+  .rating i,
+  .award i {
+    margin-right: 20px;
+  }
 }
-}
-
